@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation</title>
+</head>
+<body>
+    {% if username %}
+        <h2>Welcome, {{ username }}!</h2>
+        <p>This is the main page of the Music Recommendation app.</p>
+        <p>Here, you can implement your music recommendation functionalities.</p>
+        <a href="/logout">Logout</a>
+    {% else %}
+        <h2>Welcome!</h2>
+        <p>Please <a href="/login">login</a> or <a href="/signup">sign up</a> to access the Music Recommendation app.</p>
+    {% endif %}
+</body>
+</html>
